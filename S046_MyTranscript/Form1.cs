@@ -27,7 +27,8 @@ namespace S046_MyTranscript
             newCourse.CourseName = textBoxCourseName.Text;
             newCourse.CourseCredit = textBoxCourseCredit.Text;
             newCourse.Grade = textBoxCourseGrade.Text;
-        
+
+            dataGridViewCourse.DataSource = null;
             year1Sem1.Add(newCourse);
             dataGridViewCourse.DataSource = year1Sem1;
         }
