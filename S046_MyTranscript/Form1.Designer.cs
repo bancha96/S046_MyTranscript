@@ -41,14 +41,17 @@ namespace S046_MyTranscript
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridViewCourse = new System.Windows.Forms.DataGridView();
+            this.dataGridViewViewY1S1 = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPageYear1Sem1 = new System.Windows.Forms.TabPage();
+            this.tabPageYear1Sem2 = new System.Windows.Forms.TabPage();
+            this.dataGridViewViewY1S2 = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCourse)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewViewY1S1)).BeginInit();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.tabPageYear1Sem1.SuspendLayout();
+            this.tabPageYear1Sem2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewViewY1S2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -178,45 +181,56 @@ namespace S046_MyTranscript
             this.label3.TabIndex = 0;
             this.label3.Text = "Course ID";
             // 
-            // dataGridViewCourse
+            // dataGridViewViewY1S1
             // 
-            this.dataGridViewCourse.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCourse.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewCourse.Location = new System.Drawing.Point(3, 3);
-            this.dataGridViewCourse.Name = "dataGridViewCourse";
-            this.dataGridViewCourse.Size = new System.Drawing.Size(759, 164);
-            this.dataGridViewCourse.TabIndex = 3;
+            this.dataGridViewViewY1S1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewViewY1S1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewViewY1S1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewViewY1S1.Name = "dataGridViewViewY1S1";
+            this.dataGridViewViewY1S1.Size = new System.Drawing.Size(759, 164);
+            this.dataGridViewViewY1S1.TabIndex = 3;
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPageYear1Sem1);
+            this.tabControl1.Controls.Add(this.tabPageYear1Sem2);
             this.tabControl1.Location = new System.Drawing.Point(14, 93);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(773, 196);
             this.tabControl1.TabIndex = 4;
             // 
-            // tabPage1
+            // tabPageYear1Sem1
             // 
-            this.tabPage1.Controls.Add(this.dataGridViewCourse);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(765, 170);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPageYear1Sem1.Controls.Add(this.dataGridViewViewY1S1);
+            this.tabPageYear1Sem1.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.tabPageYear1Sem1.Location = new System.Drawing.Point(4, 22);
+            this.tabPageYear1Sem1.Name = "tabPageYear1Sem1";
+            this.tabPageYear1Sem1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageYear1Sem1.Size = new System.Drawing.Size(765, 170);
+            this.tabPageYear1Sem1.TabIndex = 0;
+            this.tabPageYear1Sem1.Text = "Year 1 Sem 1";
+            this.tabPageYear1Sem1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // tabPageYear1Sem2
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(569, 170);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPageYear1Sem2.Controls.Add(this.dataGridViewViewY1S2);
+            this.tabPageYear1Sem2.Location = new System.Drawing.Point(4, 22);
+            this.tabPageYear1Sem2.Name = "tabPageYear1Sem2";
+            this.tabPageYear1Sem2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageYear1Sem2.Size = new System.Drawing.Size(765, 170);
+            this.tabPageYear1Sem2.TabIndex = 1;
+            this.tabPageYear1Sem2.Text = "Year 1 Sem 2";
+            this.tabPageYear1Sem2.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewViewY1S2
+            // 
+            this.dataGridViewViewY1S2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewViewY1S2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewViewY1S2.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewViewY1S2.Name = "dataGridViewViewY1S2";
+            this.dataGridViewViewY1S2.Size = new System.Drawing.Size(759, 164);
+            this.dataGridViewViewY1S2.TabIndex = 0;
             // 
             // Form1
             // 
@@ -231,9 +245,11 @@ namespace S046_MyTranscript
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCourse)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewViewY1S1)).EndInit();
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
+            this.tabPageYear1Sem1.ResumeLayout(false);
+            this.tabPageYear1Sem2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewViewY1S2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -252,10 +268,11 @@ namespace S046_MyTranscript
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dataGridViewCourse;
+        private System.Windows.Forms.DataGridView dataGridViewViewY1S1;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPageYear1Sem1;
+        private System.Windows.Forms.TabPage tabPageYear1Sem2;
+        private System.Windows.Forms.DataGridView dataGridViewViewY1S2;
     }
 }
 

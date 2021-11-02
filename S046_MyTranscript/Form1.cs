@@ -13,10 +13,13 @@ namespace S046_MyTranscript
     public partial class Form1 : Form
     {
         List<Course> year1Sem1;
+        List<Course> year1Sem2;
         public Form1()
         {
             InitializeComponent();
             year1Sem1 = new List<Course>();
+            year1Sem2 = new List<Course>();
+
 
         }
 
@@ -28,9 +31,20 @@ namespace S046_MyTranscript
             newCourse.CourseCredit = textBoxCourseCredit.Text;
             newCourse.Grade = textBoxCourseGrade.Text;
 
-            dataGridViewCourse.DataSource = null;
-            year1Sem1.Add(newCourse);
-            dataGridViewCourse.DataSource = year1Sem1;
+            switch (tabControl1.SelectedIndex) 
+            {
+                case 0:
+                dataGridViewViewY1S1.DataSource = null;
+                year1Sem1.Add(newCourse);
+                dataGridViewViewY1S1.DataSource = year1Sem1;
+                    break;
+                case 1:
+                dataGridViewViewY1S2.DataSource = null;
+                year1Sem2.Add(newCourse);
+                dataGridViewViewY1S2.DataSource = year1Sem2;
+                    break;
+            }
+            
         }
     }
     class Course
